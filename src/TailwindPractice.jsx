@@ -1,7 +1,7 @@
 const Card = () => {
   return (
     <>
-      <div className="bg-slate-500 h-100 w-100 rounded-xl mx-auto mt-10 shadow-xl shadow-slate-500/50">
+      <div className="border-y-10 border-slate-800 bg-slate-500 h-105 w-100 rounded-xl mx-auto mt-10 shadow-xl shadow-slate-500/50">
         <img
           src="/images/pic.jpg"
           alt="picture"
@@ -33,10 +33,26 @@ const Card = () => {
   );
 };
 
+const DynamicText = () => {
+  const errorHandler = true;
+  return (
+    <>
+      <div
+        className={`${
+          errorHandler ? "bg-green-500" : "bg-red-500"
+        } text-white mt-3`}
+      >
+        <p className="font-bold p-5 text-center text-xl">Success</p>
+      </div>
+    </>
+  );
+};
+
 const Random = () => {
   return (
     <>
       <Card />
+      <DynamicText />
     </>
   );
 };
