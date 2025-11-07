@@ -62,9 +62,9 @@ const QouteBox3 = (props) => {
       <div className="bg-rose-400 text-white p-6 rounded-t-lg rounded-br-lg">
         <p>{qoute3.text}</p>
       </div>
-      <div className="bg-red-200 p-4 rounded-b-lg">
-        <h1 className="text-xl text-red-900 font-medium">{qoute3.author}</h1>
-        <p className="text-red-400">{qoute3.bio}</p>
+      <div className="bg-red-200 p-4 rounded-b-lg border-b-2 border-l-2 border-r-2 border-rose-400">
+        <h1 className="text-xl text-rose-600 font-medium">{qoute3.author}</h1>
+        <p className="text-rose-400">{qoute3.bio}</p>
       </div>
     </div>
   );
