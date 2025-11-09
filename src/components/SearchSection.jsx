@@ -10,10 +10,20 @@ const SearchSection = () => {
         />
       </div>
       <div className="space-x-5 mt-10">
-        <button className="p-3 bg-green-800 rounded-lg text-white cursor-pointer">
+        <button
+          onClick={() => {
+            console.log("Gugole search button was clicked");
+          }}
+          className="p-3 bg-green-800 rounded-lg text-white cursor-pointer"
+        >
           Gugole Search
         </button>
-        <button className="p-3 bg-green-800 rounded-lg text-white cursor-pointer">
+        <button
+          onClick={() => {
+            console.log("image search button was clicked");
+          }}
+          className="p-3 bg-green-800 rounded-lg text-white cursor-pointer"
+        >
           Image Search
         </button>
       </div>

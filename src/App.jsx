@@ -8,8 +8,13 @@ import Layout from "./Layout.jsx";
 import Header from "./components/Header.jsx";
 import SearchSection from "./components/SearchSection.jsx";
 import Footer from "./components/Footer.jsx";
+import UsingState from "./eventHandling/UsingState_event.jsx";
+import Widget from "./eventHandling/WidGet.jsx";
+import Counter from "./eventHandling/Counter.jsx";
+import LightSwitch from "./eventHandling/LightSwitch.jsx";
 
 const App = () => {
+  /*
   return (
     <div className="h-screen flex flex-col">
       <Header />
@@ -17,6 +22,13 @@ const App = () => {
       <Footer />
     </div>
   );
+    <div className="h-screen flex flex-col justify-center items-center">
+      <UsingState />
+    </div>
+
+  */
+
+  return <LightSwitch />;
 };
 
 export default App;
